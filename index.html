@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estudiantes</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <h2>Promedio y categoría de estudiantes</h2>
+    <div id="mean-content">
+        <div class="top-distance">
+            <p class="bold">Favor de llenar todos los campos</p>
+            <label class="calculate">Número de alumnos:</label>
+            <input class="calculate" type="text" id="quantity" autocomplete="off">
+            <button class="space calculate" id="ok" disabled>OK</button>
+            <button class="space calculate" id="addingRow" disabled>Agregar fila</button>
+        </div>
+        <div id="first-content"></div>
+        <button class="calculate" id="estimate" disabled>Calcular</button>
+        <div id="second-content"></div>
+        <div id="third-content" class="calculate"></div>
+        <button class="top-distance" id="clean">Reiniciar</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
