@@ -128,7 +128,7 @@ bttnCalculate.addEventListener("click", function () {
         categoryStudents.push(category(average[q]));
     }
     //console.log(categoryStudents);
-    if (!arrNames.includes("") && !age.includes(NaN)) {
+    if (!arrNames.includes("") && !age.includes(NaN) && !arrNote1.includes(NaN) && !arrNote2.includes(NaN) && !arrNote3.includes(NaN)) {
         creatingSecondTable(lengthTable - 1);
         averageCategoryGeneral();
     }
