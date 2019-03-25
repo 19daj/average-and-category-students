@@ -321,7 +321,7 @@ function averageCategoryGeneral() {
 
 function category(averageStudent) {
     var categoryStudent;
-    if (averageStudent >= 1 && averageStudent <= 25.9) {
+    if (averageStudent >= 0 && averageStudent <= 25.9) {
         categoryStudent = "Pésimo";
     } else if (averageStudent >= 26 && averageStudent <= 50.9) {
         categoryStudent = "Malo";
