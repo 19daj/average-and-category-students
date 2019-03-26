@@ -128,6 +128,14 @@ bttnCalculate.addEventListener("click", function () {
         categoryStudents.push(category(average[q]));
     }
     //console.log(categoryStudents);
+    if(arrNote1.includes(NaN) || arrNote2.includes(NaN) || arrNote3.includes(NaN)) {
+        alert("Favor de introducir únicamente números en las celdas de Notas");
+    }
+
+    if(arrNames.includes("") || age.includes(NaN)) {
+        alert("Favor de llenar todos los campos correctamente");
+    }
+
     if (!arrNames.includes("") && !age.includes(NaN) && !arrNote1.includes(NaN) && !arrNote2.includes(NaN) && !arrNote3.includes(NaN)) {
         creatingSecondTable(lengthTable - 1);
         averageCategoryGeneral();
